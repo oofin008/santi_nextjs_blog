@@ -1,0 +1,34 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@elements": "./components/elements",
+          "@layouts": "./components/layouts",
+          "@shares": "./components/shares",
+          "@styles": "./components/styles",
+          "@apis": "./modules/apis",
+          "@contexts": "./modules/contexts",
+          "@enum": "./modules/enum",
+          "@ga": "./modules/GA",
+          "@helpers": "./modules/helpers",
+          "@routes": "./routes",
+          "@languageStore": "./modules/languageStore",
+          "@reduxStore": "./modules/reduxStore"
+        },
+        "cwd": "babelrc"
+      }
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
+}

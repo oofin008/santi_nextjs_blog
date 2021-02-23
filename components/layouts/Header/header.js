@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Fragment, Component } from 'react'
 import Link from 'next/link'
 import HeaderStyleBox from './style'
 
@@ -11,12 +11,12 @@ export class Header extends Component {
   }
   render() {
     return (
-      <>
+      <Fragment>
         <HeaderStyleBox>
           <Link href='/' >Index</Link>
           <Link href='/blog' >Blog</Link>
         </HeaderStyleBox>
-      </>
+      </Fragment>
     )
   }
 }

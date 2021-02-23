@@ -1,6 +1,10 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 
-export default (props) => {
+const Header = dynamic(import('./Header/header'))
+const Footer = dynamic(import('./Footer/footer'))
+
+const Layout = ({children}) => {
   return (
     <>
       <Header />
@@ -9,3 +13,5 @@ export default (props) => {
     </>
   )
 }
+
+export default Layout;
