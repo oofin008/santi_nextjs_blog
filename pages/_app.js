@@ -1,6 +1,5 @@
 import React from 'react'
-import { Layout } from '../components/layouts'
-import '../components/styles/globals.css'
+import { Layout } from '@layouts'
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
