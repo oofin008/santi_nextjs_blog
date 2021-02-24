@@ -11,6 +11,7 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
+    "@oofin008/santi_component_ui": "^0.1.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "next": "10.0.7",
