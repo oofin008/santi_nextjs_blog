@@ -1,13 +1,24 @@
-import React from "react";
-import MiniCardGrid from "@oofin008/santi_component_ui/dist";
-export default function Home() {
-  return (
-    <div className="container">
-      <h1>Hello world</h1>
-      <MiniCardGrid data={Mockdata} />
-    </div>
-  );
+import React, {PureComponent} from "react";
+import { MiniCardGrid } from "@oofin008/santi_component_ui/dist";
+
+class Home extends PureComponent {
+  
+  static async getInitialProps() {
+    return {};
+  }
+
+  render() {
+
+    return (
+      <div className="container-fluid">
+        <h1>Hello world</h1>
+        <MiniCardGrid data={Mockdata} />
+      </div>
+    );
+  }
 }
+
+export default Home;
 
 const Mockdata = [
   {
