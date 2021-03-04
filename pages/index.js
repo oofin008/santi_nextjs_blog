@@ -1,5 +1,5 @@
 import React, {PureComponent} from "react";
-import { MiniCardGrid } from "@oofin008/santi_component_ui/dist";
+import { MiniCardGrid } from "@oofin008/santi_component_ui";
 
 class Home extends PureComponent {
   
